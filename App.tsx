@@ -12,18 +12,13 @@ const App = () => {
   return (
     <NavigationContainer>
        <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{title: 'Welcome'}}
-        />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
+       <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Post" component={PostScreen} />
       </Stack.Navigator>
-  
     </NavigationContainer>
   );
 }
 
 
-export default withExpoSnack(App);
+export default App;
 
